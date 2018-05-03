@@ -4,19 +4,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import static javafx.scene.input.KeyCode.T;
 
 /**
  * Class: CycleJoyIOServlet
- * Version: 0.1
+ * Version: 0.2
  * Created on 27.04.2018 with the help of IntelliJ IDEA (thanks!)
  * Author: Evnica
  * Description:
