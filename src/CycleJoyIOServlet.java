@@ -21,9 +21,9 @@ import java.util.stream.Collectors;
 public class CycleJoyIOServlet extends HttpServlet
 {
     private static final long serialVersionUID = 1827645647L;
-    private static final String[] paths = {"../webapps/CycleJoy/WEB-INF/data/night.json",
-                                           "../webapps/CycleJoy/WEB-INF/data/kids.json",
-                                           "../webapps/CycleJoy/WEB-INF/data/historical.json"};
+    private static final String[] paths = {"../webapps/CycleJoy/WEB-INF/data/night.geojson",
+                                           "../webapps/CycleJoy/WEB-INF/data/kids.geojson",
+                                           "../webapps/CycleJoy/WEB-INF/data/culture.geojson"};
 
     @Override
     protected void doGet( HttpServletRequest req, HttpServletResponse resp ) throws ServletException, IOException
@@ -37,7 +37,7 @@ public class CycleJoyIOServlet extends HttpServlet
             case "kids":
                 pois = readFile( paths[1] );
                 break;
-            case "historical":
+            case "culture":
                 pois = readFile( paths[2] );
                 break;
         }
