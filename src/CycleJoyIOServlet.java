@@ -4,19 +4,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import static javafx.scene.input.KeyCode.T;
 
 /**
  * Class: CycleJoyIOServlet
- * Version: 0.1
+ * Version: 0.2
  * Created on 27.04.2018 with the help of IntelliJ IDEA (thanks!)
  * Author: Evnica
  * Description:
@@ -25,9 +21,9 @@ import static javafx.scene.input.KeyCode.T;
 public class CycleJoyIOServlet extends HttpServlet
 {
     private static final long serialVersionUID = 1827645647L;
-    private static final String[] paths = {"../webapps/CycleJoy/WEB-INF/data/night.json",
-                                           "../webapps/CycleJoy/WEB-INF/data/kids.json",
-                                           "../webapps/CycleJoy/WEB-INF/data/historical.json"};
+    private static final String[] paths = {"../webapps/CycleJoy/WEB-INF/data/night.geojson",
+                                           "../webapps/CycleJoy/WEB-INF/data/kids.geojson",
+                                           "../webapps/CycleJoy/WEB-INF/data/culture.geojson"};
 
     @Override
     protected void doGet( HttpServletRequest req, HttpServletResponse resp ) throws ServletException, IOException
@@ -41,7 +37,7 @@ public class CycleJoyIOServlet extends HttpServlet
             case "kids":
                 pois = readFile( paths[1] );
                 break;
-            case "historical":
+            case "culture":
                 pois = readFile( paths[2] );
                 break;
         }
