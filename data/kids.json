@@ -7,7 +7,7 @@
       "properties": {
         "Name": "Haus des Meeres - Aqua Terra Zoo",
         "description": "On 4000 m² you can see tropical birds, free-running monkeys, terrarium animals like crocodiles and snakes and also aquatic animals like fish, tortoises and sharks. In total more than 10000 different animals living in the Zoo. In the section of terrarium animals you can see crocodiles and poisonous snakes.The main attractions of the tropical seawater section are the huge fish-tanks, the sharks, sea turtles, many different corals, as well as gorgeous fish. The house has been built into a 2nd World war bunker.",
-        "openinghours": "<br>Opening hours: <br>Mo-We: 09:00-18:00 <br>Th: 09:00-21:00 <br>Fr-Su: 09:00-18:00 <br>Admission fee: Adult: € 18,50, Child (< 15 years): € 8,50",
+        "openinghours": "Opening hours: <br>Mo-We: 09:00-18:00 <br>Th: 09:00-21:00 <br>Fr-Su: 09:00-18:00 <br>Admission fee: Adult: € 18,50, Child (< 15 years): € 8,50",
         "link": "https://www.likealocalguide.com/vienna/aqua-terra-zoo"},
       "geometry": {
         "type": "Point",
@@ -18,7 +18,7 @@
       "properties": {
         "Name": "ZOOM Kindermuseum",
         "description": "The ZOOM Kindermuseum is Austria’s leading museum for children spread over 1,600m². It offers year-round exhibitions, workshops, a multimedia lab, and much more for children aged 8 months to 14 years. It also provides a comprehensive program of science education. Children use all their senses to explore the world. As the mood takes them, they can ask questions, touch, investigate, sense, and play. Objects can be handled and tried out, with active participation leading to active understanding.",
-        "openinghours": "<br>Opening hours: <br>Mo:closed <br>Tu-Fr: 8:30–16:00 <br>Sa-Su: 9:45 –16:00 <br>Admission fee: Family ticket: € 32,00",
+        "openinghours": "Opening hours: <br>Mo:closed <br>Tu-Fr: 8:30–16:00 <br>Sa-Su: 9:45 –16:00 <br>Admission fee: Family ticket: € 32,00",
         "link": "https://www.mqw.at/en/institutions/zoom-kindermuseum/"},
       "geometry": {
         "type": "Point",
@@ -29,7 +29,7 @@
       "properties": {
         "Name": "Urania Sternwarte",
         "description": "Urania Observatory isthe oldest public observatory in Austria. The great double telescope, consisting of a refracting telescope and a mirror telescope, offers you the joy of astronomical observation right in the heart of Vienna. Urania is a public educational institute and observatory in Vienna, Austria. It was built according to the plans of Art Nouveau style architect Max Fabiani at the outlet of the Wien River and was opened in 1910 by Franz Joseph I of Austria as an educational facility with a public observatory.",
-        "openinghours": "<br>Opening hours: <br>Mo, Tu, Th: 9:00-16:00 <br>We-Fr: 9:00-20:00 <br>Sa, Su:14:00-20:00 <br>Admission fee: no information",
+        "openinghours": "Opening hours: <br>Mo, Tu, Th: 9:00-16:00 <br>We-Fr: 9:00-20:00 <br>Sa, Su:14:00-20:00 <br>Admission fee: no information",
         "link": "https://www.wien.info/de/wien-fuer/familien/sightseeing/sterngucker" },
       "geometry": {
         "type": "Point",
@@ -40,7 +40,7 @@
       "properties": {
         "Name": "Haus der Musik",
         "description": "The house of music is an interactive sound museum which provides a new approach to music on a playful as well as scientific level. Vienna has always been a city of musical innovation and a place where people were not afraid to try the unconventional. Haus der Musik offers their visitors a new and interactive way of music education. Besides historical aspects the main focus is on the interplay of natural and electronic sound production and the relationship between analogue and digital to build bridges between tradition and innovation.",
-        "openinghours": "<br>Opening hours: <br>Daily from 10:00 - 22:00 <br>Admission fee: Adult: € 13,00, Children (< 12 years): € 6,00",
+        "openinghours": "Opening hours: <br>Daily from 10:00 - 22:00 <br>Admission fee: Adult: € 13,00, Children (< 12 years): € 6,00",
         "link": "http://www.hausdermusik.com/en"},
       "geometry": {
         "type": "Point",
@@ -51,7 +51,7 @@
       "properties": {
         "Name": "Schmetterlinghaus",
         "description": "Right in the centre of Vienna you will find a tropical oasis, peaceful and relaxing, the Imperial Butterfly House. In one of the most beautiful Art Nouveau palm houses in the world, you enter a fantastic environment of adventure and excitement, populated by one of nature‘s most gentle and colourful creatures, the butterfly.  All year round you can admire around 400 live, free flying butterflies in the Butterfly House. The plants are chosen with the needs of the butterflies in mind. Some are nectar plants providing food for the butterflies.",
-        "openinghours": "<br>Opening hours: <br>Su-Fr: 10:00-4:45 <br>Sa: 10:00-18:15 <br>No admission fee",
+        "openinghours": "Opening hours: <br>Su-Fr: 10:00-4:45 <br>Sa: 10:00-18:15 <br>No admission fee",
         "link": "http://schmetterlinghaus.at/en/"},
       "geometry": {
         "type": "Point",
