@@ -58,8 +58,8 @@
         [
           "North-West",
           "North-East",
-          "South-West",
-          "South-East"
+          "South-East",
+          "South-West"
         ],
         "rightAnswerIndex": 2,
         "hint": "Vienna is located close to the Slovenian border.",
