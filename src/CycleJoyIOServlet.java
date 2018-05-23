@@ -23,7 +23,8 @@ public class CycleJoyIOServlet extends HttpServlet
     private static final long serialVersionUID = 1827645647L;
     private static final String[] paths = {"../webapps/CycleJoy/WEB-INF/data/night.geojson",
                                            "../webapps/CycleJoy/WEB-INF/data/kids.geojson",
-                                           "../webapps/CycleJoy/WEB-INF/data/culture.geojson"};
+                                           "../webapps/CycleJoy/WEB-INF/data/culture.geojson",
+                                           "../webapps/CycleJoy/WEB-INF/data/userMarkers.json"};
 
     @Override
     protected void doGet( HttpServletRequest req, HttpServletResponse resp ) throws ServletException, IOException
@@ -39,6 +40,9 @@ public class CycleJoyIOServlet extends HttpServlet
                 break;
             case "culture":
                 pois = readFile( paths[2] );
+                break;
+            case "user":
+                pois = readFile( paths[3] );
                 break;
         }
         resp.setContentType( "application/json" );
