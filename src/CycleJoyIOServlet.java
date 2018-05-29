@@ -29,25 +29,45 @@ public class CycleJoyIOServlet extends HttpServlet
     @Override
     protected void doGet( HttpServletRequest req, HttpServletResponse resp ) throws ServletException, IOException
     {
-        String tripType = req.getParameter( "tripType" );
-        String pois = "[]";
-        switch (tripType){
-            case "night":
-                pois = readFile( paths[0] );
-                break;
-            case "kids":
-                pois = readFile( paths[1] );
-                break;
-            case "culture":
-                pois = readFile( paths[2] );
-                break;
-            case "user":
-                pois = readFile( paths[3] );
-                break;
-        }
         resp.setContentType( "application/json" );
         resp.setCharacterEncoding( "UTF-8" );
-        resp.getWriter().write( pois );
+
+        String tripType = req.getParameter( "tripType" );
+        if(tripType != null){
+            String pois = "[]";
+            switch (tripType){
+                case "night":
+                    pois = readFile( paths[0] );
+                    break;
+                case "kids":
+                    pois = readFile( paths[1] );
+                    break;
+                case "culture":
+                    pois = readFile( paths[2] );
+                    break;
+                case "user":
+                    pois = readFile( paths[3] );
+                    break;
+            }
+            resp.getWriter().write( pois );
+        }
+        else{
+            String markers = req.getParameter("markers");
+            if (markers != null){
+                try
+                {
+                    Files.write(Paths.get(paths[3]), markers.getBytes());
+                    resp.getWriter().write( "{\"status\":\"OK\"}" );
+                } catch ( IOException e )
+                {
+                    resp.getWriter().write( "{\"status\":\"" + e.getMessage() + "\"" );
+                }
+            }
+            else {
+                Files.write(Paths.get(paths[3]), "{\"type\":\"FeatureCollection\",\"features\":[]}".getBytes());
+                resp.getWriter().write( "{\"status\":\"EMPTY\"}" );
+            }
+        }
 
     }
 
